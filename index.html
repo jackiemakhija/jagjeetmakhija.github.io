@@ -1134,7 +1134,7 @@
 
     <header>
         <div class="brand">
-            <div class="logo">AL</div>
+            <div class="logo">JM</div>
             <div class="brand-text">Jagjeet Singh Makhija</div>
         </div>
         <div class="controls">
@@ -1142,6 +1142,7 @@
                 <input type="text" id="search-input" placeholder="Search..." class="search-input">
                 <button id="search-btn" class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
             </div>
+            <div class="visitor-counter" id="visitor-count">Visitors: <span id="count">0</span></div>
             <button id="theme-btn" class="theme-toggle" aria-label="Toggle light mode">🌙</button>
         </div>
     </header>
@@ -1427,6 +1428,30 @@
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Visitor Counter - Increments on each page view
+        (function() {
+            // Get current count from localStorage or start at 0
+            let visitorCount = localStorage.getItem('visitorCount');
+            
+            if (!visitorCount) {
+                visitorCount = 0;
+            } else {
+                visitorCount = parseInt(visitorCount);
+            }
+            
+            // Increment the count
+            visitorCount++;
+            
+            // Save the new count
+            localStorage.setItem('visitorCount', visitorCount);
+            
+            // Display the count
+            const countElement = document.getElementById('count');
+            if (countElement) {
+                countElement.textContent = visitorCount;
+            }
+        })();
+
         // Theme toggle functionality with minimal code
         var themeButton = document.getElementById('theme-btn');
         if (themeButton) {
