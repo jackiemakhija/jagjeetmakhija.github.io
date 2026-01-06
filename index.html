@@ -18,43 +18,44 @@
         gtag('config', 'G-XXXXXXX');
     </script>
     <style>
-        /* Base Variables - ELECTRIC CYBERPUNK 🔥⚡ */
+        /* Base Variables - FEATURED WORKS INSPIRED 🎨 */
         :root {
-            --bg-color: #0a0020;
-            --gradient-1: linear-gradient(135deg, #ff006e, #8338ec, #3a86ff);
-            --gradient-2: linear-gradient(135deg, #8338ec, #3a86ff, #06ffa5);
-            --gradient-3: linear-gradient(135deg, #ff006e, #06ffa5);
-            --gradient-4: linear-gradient(135deg, #3a86ff, #06ffa5, #ff006e);
-            --gradient-5: linear-gradient(135deg, #06ffa5, #8338ec, #ff006e);
+            --bg-color: #1a1a1a;
+            --dark-bg: #0a0a0a;
+            --gradient-1: linear-gradient(135deg, #ffd60a, #ff6b9d, #5ffbf1);
+            --gradient-2: linear-gradient(135deg, #ff6b9d, #5ffbf1, #ffd60a);
+            --gradient-3: linear-gradient(135deg, #5ffbf1, #ffd60a, #ff6b9d);
+            --gradient-4: linear-gradient(135deg, #ffd60a, #5ffbf1);
+            --gradient-5: linear-gradient(135deg, #ff6b9d, #5ffbf1);
             --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.95);
-            --card-bg: rgba(255, 0, 110, 0.08);
-            --card-border: rgba(131, 56, 236, 0.4);
-            --section-bg-network: rgba(255, 0, 110, 0.15);
-            --section-bg-playground: rgba(131, 56, 236, 0.15);
-            --section-bg-articles: rgba(58, 134, 255, 0.15);
-            --section-bg-support: rgba(6, 255, 165, 0.15);
-            --section-bg-podcasts: rgba(255, 0, 110, 0.2);
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --card-bg: rgba(255, 214, 10, 0.08);
+            --card-border: rgba(95, 251, 241, 0.3);
+            --section-bg-network: rgba(255, 214, 10, 0.12);
+            --section-bg-playground: rgba(255, 107, 157, 0.12);
+            --section-bg-articles: rgba(95, 251, 241, 0.12);
+            --section-bg-support: rgba(255, 214, 10, 0.15);
+            --section-bg-podcasts: rgba(255, 107, 157, 0.15);
             
-            /* Electric Cyberpunk Colors */
-            --hot-pink: #ff006e;
-            --electric-purple: #8338ec;
-            --cyber-blue: #3a86ff;
-            --neon-green: #06ffa5;
+            /* Featured Works Colors */
+            --yellow: #ffd60a;
+            --coral: #ff6b9d;
+            --mint-green: #5ffbf1;
+            --dark-accent: #0a0a0a;
         }
 
-        /* Light Mode Variables - ELECTRIC CYBERPUNK LIGHT */
+        /* Light Mode Variables - FEATURED WORKS LIGHT */
         .light-mode {
-            --bg-color: #fff0f8;
-            --text-primary: #0a0020;
-            --text-secondary: rgba(10, 0, 32, 0.8);
-            --card-bg: rgba(255, 255, 255, 0.95);
-            --card-border: rgba(131, 56, 236, 0.3);
-            --section-bg-network: rgba(255, 0, 110, 0.1);
-            --section-bg-playground: rgba(131, 56, 236, 0.1);
-            --section-bg-articles: rgba(58, 134, 255, 0.1);
-            --section-bg-support: rgba(6, 255, 165, 0.1);
-            --section-bg-podcasts: rgba(255, 0, 110, 0.12);
+            --bg-color: #fafafa;
+            --text-primary: #1a1a1a;
+            --text-secondary: rgba(26, 26, 26, 0.8);
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --card-border: rgba(95, 251, 241, 0.4);
+            --section-bg-network: rgba(255, 214, 10, 0.15);
+            --section-bg-playground: rgba(255, 107, 157, 0.15);
+            --section-bg-articles: rgba(95, 251, 241, 0.15);
+            --section-bg-support: rgba(255, 214, 10, 0.18);
+            --section-bg-podcasts: rgba(255, 107, 157, 0.18);
         }
 
         /* Reset & Base Styles */
@@ -85,12 +86,12 @@
             width: 100%;
             height: 100%;
             background-image:
-                radial-gradient(circle at 15% 15%, rgba(255, 0, 110, 0.4) 0%, transparent 25%),
-                radial-gradient(circle at 85% 25%, rgba(131, 56, 236, 0.45) 0%, transparent 35%),
-                radial-gradient(circle at 50% 50%, rgba(58, 134, 255, 0.35) 0%, transparent 45%),
-                radial-gradient(circle at 80% 80%, rgba(6, 255, 165, 0.4) 0%, transparent 35%),
-                radial-gradient(circle at 25% 65%, rgba(255, 0, 110, 0.3) 0%, transparent 30%),
-                radial-gradient(circle at 70% 10%, rgba(131, 56, 236, 0.3) 0%, transparent 25%);
+                radial-gradient(circle at 15% 15%, rgba(255, 214, 10, 0.25) 0%, transparent 25%),
+                radial-gradient(circle at 85% 25%, rgba(255, 107, 157, 0.3) 0%, transparent 35%),
+                radial-gradient(circle at 50% 50%, rgba(95, 251, 241, 0.25) 0%, transparent 45%),
+                radial-gradient(circle at 80% 80%, rgba(255, 214, 10, 0.2) 0%, transparent 35%),
+                radial-gradient(circle at 25% 65%, rgba(255, 107, 157, 0.25) 0%, transparent 30%),
+                radial-gradient(circle at 70% 10%, rgba(95, 251, 241, 0.2) 0%, transparent 25%);
             z-index: -1;
             animation: backgroundShift 30s ease-in-out infinite alternate;
         }
