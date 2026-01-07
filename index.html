@@ -1149,11 +1149,95 @@
                 <input type="text" id="search-input" placeholder="Search..." class="search-input">
                 <button id="search-btn" class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
             </div>
-          
             <div class="visitor-counter" id="visitor-count">Visitors: <span id="count">0</span></div>
             <button id="theme-btn" class="theme-toggle" aria-label="Toggle light mode">🌙</button>
         </div>
     </header>
+
+    <!-- Quick Navigation Index -->
+    <div style="
+        width: 100%;
+        max-width: 720px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        background: var(--card-bg);
+        border-radius: 16px;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid var(--card-border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    ">
+        <div style="font-size: 14px; font-weight: 600; color: var(--text-secondary); margin-right: 10px;">Quick Nav:</div>
+        <a href="#connect" style="
+            padding: 6px 14px;
+            background: rgba(255, 214, 10, 0.1);
+            border: 1px solid rgba(255, 214, 10, 0.3);
+            border-radius: 20px;
+            color: #ffd60a;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='rgba(255, 214, 10, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 214, 10, 0.1)'; this.style.transform='translateY(0)'">
+            🌐 Connect
+        </a>
+        <a href="#playground" style="
+            padding: 6px 14px;
+            background: rgba(255, 107, 157, 0.1);
+            border: 1px solid rgba(255, 107, 157, 0.3);
+            border-radius: 20px;
+            color: #ff6b9d;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='rgba(255, 107, 157, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 107, 157, 0.1)'; this.style.transform='translateY(0)'">
+            🤖 AI Apps
+        </a>
+        <a href="#books" style="
+            padding: 6px 14px;
+            background: rgba(95, 251, 241, 0.1);
+            border: 1px solid rgba(95, 251, 241, 0.3);
+            border-radius: 20px;
+            color: #5ffbf1;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='rgba(95, 251, 241, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(95, 251, 241, 0.1)'; this.style.transform='translateY(0)'">
+            📚 Books
+        </a>
+        <a href="#articles" style="
+            padding: 6px 14px;
+            background: rgba(255, 214, 10, 0.1);
+            border: 1px solid rgba(255, 214, 10, 0.3);
+            border-radius: 20px;
+            color: #ffd60a;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='rgba(255, 214, 10, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 214, 10, 0.1)'; this.style.transform='translateY(0)'">
+            📝 Articles
+        </a>
+        <a href="#contact" style="
+            padding: 6px 14px;
+            background: rgba(255, 107, 157, 0.1);
+            border: 1px solid rgba(255, 107, 157, 0.3);
+            border-radius: 20px;
+            color: #ff6b9d;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='rgba(255, 107, 157, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(255, 107, 157, 0.1)'; this.style.transform='translateY(0)'">
+            💬 Contact
+        </a>
+    </div>
 
     <div class="container">
         <div class="profile-card">
@@ -1162,24 +1246,96 @@
                 <div class="status-indicator"></div>
             </div>
 
-            <p class="profile-title">
-            ⚡ Senior Data Engineering Architect<br>
-            🏢 Enterprise Data Platforms Manager | 📊 Data Architect<br>
-            <img src="microsoft-logo.png" alt="Microsoft" style="width: 18px; height: 18px; vertical-align: middle; margin-right: 4px;"> Ex-Microsoft • 📚 Published Author • 🎓 EMBA
-            </p>
-            
+            <div class="profile-info">
+                <h1 class="profile-name">Jagjeet Singh Makhija</h1>
+                <p class="profile-title">
+                    ⚡ Senior Data Engineering Architect<br>
+                    🏢 Enterprise Data Platforms Manager | 📊 Data Architect<br>
+                    <img src="microsoft-logo.png" alt="Microsoft" style="width: 18px; height: 18px; vertical-align: middle; margin-right: 4px;"> Ex-Microsoft • 📚 Published Author • 🎓 EMBA
+                </p>
+
                 <div class="about-me">
                     <h3 class="about-title"><i class="fas fa-briefcase"></i> About Me</h3>
                     <p class="about-text">I'm a distinguished Senior Solution Architect with 20+ years architecting enterprise data platforms. Specializing in Microsoft Fabric, Azure Synapse, Snowflake, and Agentic AI, I transform complex data challenges into scalable, intelligent solutions. I leverage enterprise data by AI to give meaningful data insights that drive strategic business decisions. As a published author and Ex-Microsoft architect with an Executive MBA, I bring both technical depth and strategic business acumen to every engagement.</p>
                 </div>
 
                 <div class="skills">
-                    <span class="skill-tag">Microsoft Fabric</span>
-                    <span class="skill-tag">Azure Synapse</span>
-                    <span class="skill-tag">Snowflake</span>
-                    <span class="skill-tag">Agentic AI</span>
-                    <span class="skill-tag">Data Architecture</span>
-                    <span class="skill-tag">AI/ML Integration</span>
+                    <span class="skill-tag">🔷 Microsoft Fabric</span>
+                    <span class="skill-tag">☁️ Azure Synapse</span>
+                    <span class="skill-tag">❄️ Snowflake</span>
+                    <span class="skill-tag">🤖 Agentic AI</span>
+                    <span class="skill-tag">🏗️ Data Architecture</span>
+                    <span class="skill-tag">🧠 AI/ML Integration</span>
+                </div>
+
+                <!-- Trending Stats Showcase -->
+                <div style="
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                    gap: 12px;
+                    margin-top: 25px;
+                    padding-top: 20px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                ">
+                    <div style="
+                        background: linear-gradient(135deg, rgba(255, 214, 10, 0.1), rgba(255, 107, 157, 0.05));
+                        padding: 20px 15px;
+                        border-radius: 15px;
+                        text-align: center;
+                        border: 2px solid rgba(255, 214, 10, 0.3);
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255, 214, 10, 0.6)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 214, 10, 0.3)'">
+                        <div style="font-size: 2.2rem; font-weight: 900; color: #ffd60a; margin-bottom: 5px;">20+</div>
+                        <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Years Experience</div>
+                    </div>
+
+                    <div style="
+                        background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(95, 251, 241, 0.05));
+                        padding: 20px 15px;
+                        border-radius: 15px;
+                        text-align: center;
+                        border: 2px solid rgba(255, 107, 157, 0.3);
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255, 107, 157, 0.6)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 107, 157, 0.3)'">
+                        <div style="font-size: 2.2rem; font-weight: 900; color: #ff6b9d; margin-bottom: 5px;">📚 2</div>
+                        <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Published Books</div>
+                    </div>
+
+                    <div style="
+                        background: linear-gradient(135deg, rgba(95, 251, 241, 0.1), rgba(255, 107, 157, 0.05));
+                        padding: 20px 15px;
+                        border-radius: 15px;
+                        text-align: center;
+                        border: 2px solid rgba(95, 251, 241, 0.3);
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(95, 251, 241, 0.6)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(95, 251, 241, 0.3)'">
+                        <div style="font-size: 2.2rem; font-weight: 900; color: #5ffbf1; margin-bottom: 5px;">📝 50+</div>
+                        <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Published Articles</div>
+                    </div>
+
+                    <div style="
+                        background: linear-gradient(135deg, rgba(255, 214, 10, 0.1), rgba(255, 107, 157, 0.05));
+                        padding: 20px 15px;
+                        border-radius: 15px;
+                        text-align: center;
+                        border: 2px solid rgba(255, 214, 10, 0.3);
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255, 214, 10, 0.6)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 214, 10, 0.3)'">
+                        <div style="font-size: 2.2rem; font-weight: 900; color: #ffd60a; margin-bottom: 5px;">🏢</div>
+                        <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Ex-Microsoft</div>
+                    </div>
+
+                    <div style="
+                        background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(95, 251, 241, 0.05));
+                        padding: 20px 15px;
+                        border-radius: 15px;
+                        text-align: center;
+                        border: 2px solid rgba(255, 107, 157, 0.3);
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255, 107, 157, 0.6)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 107, 157, 0.3)'">
+                        <div style="font-size: 2.2rem; font-weight: 900; color: #ff6b9d; margin-bottom: 5px;">🎓</div>
+                        <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Executive MBA</div>
+                    </div>
                 </div>
 
                 <div class="social-share">
@@ -1192,71 +1348,78 @@
         </div>
 
         <!-- Join My AI Network Section -->
-        <section class="section section-network">
+        <section id="connect" class="section section-network">
             <div class="section-header">
                 <div class="section-icon"><i class="fas fa-network-wired"></i></div>
-                <h2 class="section-title">Connect With Me</h2>
+                <h2 class="section-title">🌐 Connect With Me</h2>
             </div>
 
             <div class="links">
                 <a href="https://linkedin.com/in/jagjeetmakhija" target="_blank" class="link-button linkedin">
-                    <div class="icon">in</div>
+                    <div class="icon">💼</div>
                     <div class="link-content">
                         <div class="link-title">LinkedIn</div>
-                        <div class="link-description">Connect with me professionally</div>
+                        <div class="link-description">Let's connect professionally 🤝</div>
                     </div>
                 </a>
 
                 <a href="http://github.com/jagjeetmakhija" target="_blank" class="link-button github">
-                    <div class="icon">GH</div>
+                    <div class="icon">💻</div>
                     <div class="link-content">
                         <div class="link-title">GitHub</div>
-                        <div class="link-description">Check out my code repositories</div>
+                        <div class="link-description">Explore my open-source projects 🚀</div>
                     </div>
                 </a>
 
                 <a href="https://x.com/JagjeetMakhija" target="_blank" class="link-button twitter">
-                    <div class="icon">X</div>
+                    <div class="icon">✨</div>
                     <div class="link-content">
                         <div class="link-title">X / Twitter</div>
-                        <div class="link-description">Follow me for tech insights</div>
+                        <div class="link-description">Daily tech insights & trends 💡</div>
                     </div>
                 </a>
             </div>
         </section>
 
         <!-- My AI Playground & Apps Section -->
-<section class="section section-playground">
-    <div class="section-header">
-        <div class="section-icon"><i class="fas fa-robot"></i></div>
-        <h2 class="section-title">My AI Playground & Apps</h2>
-    </div>
-
-    <div class="links">
-        <a href="https://huggingface.co/spaces/jackiemakhija/Natural-Language-to-Governed-Insights" target="_blank" class="link-button copilot">
-            <div class="icon">🤗</div>
-            <div class="link-content">
-                <div class="link-title">Natural Language to Governed Insights APP</div>
-                <div class="link-description">Interactive Hugging Face Space - Microsoft Fabric + Semantic Model + Foundry Local</div>
+        <section id="playground" class="section section-playground">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-robot"></i></div>
+                <h2 class="section-title">🤖 My AI Playground & Apps</h2>
             </div>
-        </a>
 
-     <a href="https://huggingface.co/spaces/jackiemakhija/callcenter-aiaagent" target="_blank" class="link-button sap">
-            <div class="icon">📞</div>
-            <div class="link-content">
-                <div class="link-title">AI-Powered Call Center APP</div>
-                <div class="link-description">Intelligent call center agent with natural language processing capabilities</div>
+            <div class="links">
+                <a href="https://huggingface.co/spaces/jackiemakhija/Natural-Language-to-Governed-Insights" target="_blank" class="link-button copilot">
+                    <div class="icon">🤗</div>
+                    <div class="link-content">
+                        <div class="link-title">Natural Language to Governed Insights APP</div>
+                        <div class="link-description">Interactive Hugging Face Space - Microsoft Fabric + Semantic Model + Foundry Local</div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/jagjeetmakhija/Natural-Language-to-Governed-Insights-End-to-End-Runbook" target="_blank" class="link-button copilot">
+                    <div class="icon">🔍</div>
+                    <div class="link-content">
+                        <div class="link-title">Natural Language to Governed Insights Runbook</div>
+                        <div class="link-description">Complete End-to-End GitHub Implementation Guide</div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/jagjeetmakhija/CallCenter-AIAgent" target="_blank" class="link-button sap">
+                    <div class="icon">📞</div>
+                    <div class="link-content">
+                        <div class="link-title">AI-Powered Call Center Solution</div>
+                        <div class="link-description">Intelligent call center agent with natural language processing capabilities</div>
+                    </div>
+                </a>
             </div>
-        </a>
-</div>
-
-    </section>
+        </section>
 
         <!-- Published Books Section -->
-        <section class="section section-articles">
+        <section id="books" class="section section-articles">
             <div class="section-header">
                 <div class="section-icon"><i class="fas fa-book"></i></div>
-                <h2 class="section-title">My Published Books</h2>
+                <h2 class="section-title">📚 My Published Books</h2>
             </div>
 
             <div class="links">
@@ -1277,10 +1440,10 @@
         </section>
 
         <!-- Books I've Reviewed Section -->
-        <section class="section section-playground">
+        <section id="playground" class="section section-playground">
             <div class="section-header">
                 <div class="section-icon"><i class="fas fa-star"></i></div>
-                <h2 class="section-title">Books I've Reviewed & Recommend</h2>
+                <h2 class="section-title">⭐ Books I've Reviewed & Recommend</h2>
             </div>
 
             <div class="links">
@@ -1303,10 +1466,10 @@
         </section>
 
         <!-- Published Articles Section -->
-        <section class="section section-articles">
+        <section id="articles" class="section section-articles">
             <div class="section-header">
                 <div class="section-icon"><i class="fas fa-book-open"></i></div>
-                <h2 class="section-title">Published Articles & Insights</h2>
+                <h2 class="section-title">📝 Published Articles & Insights</h2>
             </div>
 
             <div class="links">
@@ -1409,10 +1572,10 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section section-support">
+        <section id="contact" class="section section-support">
             <div class="section-header">
                 <div class="section-icon"><i class="fas fa-envelope"></i></div>
-                <h2 class="section-title">Let's Connect</h2>
+                <h2 class="section-title">💬 Let's Connect</h2>
             </div>
 
             <div class="newsletter-container">
@@ -1604,3 +1767,9 @@
         @keyframes highlightPulse {
             0% { box-shadow: 0 0 0 0 rgba(34, 184, 255, 0.6); }
             50% { box
+-shadow: 0 0 20px rgba(34, 184, 255, 0.6); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 184, 255, 0.6); }
+        }
+    </style>
+</body>
+</html>
